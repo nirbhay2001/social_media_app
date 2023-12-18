@@ -24,7 +24,7 @@ const postSchema = mongoose.Schema(
     },
     comments: {
       type: Array,
-      default: [],
+      default: [], // esme current user ke post per comment karne wala user ka id store hoga
     },
   },
   { timestamps: true }
@@ -33,3 +33,10 @@ const postSchema = mongoose.Schema(
 const Post = mongoose.model("Post", postSchema);
 
 export default Post;
+
+
+
+
+
+
+

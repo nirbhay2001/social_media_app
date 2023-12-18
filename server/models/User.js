@@ -31,7 +31,7 @@ const UserSchema = new mongoose.Schema(
     },
     friends: {
       type: Array,
-      default: [],
+      default: [], // esme current user ke friends ka id store hoga
     },
     location: String,
     occupation: String,
@@ -43,3 +43,9 @@ const UserSchema = new mongoose.Schema(
 
 const User = mongoose.model("User", UserSchema);
 export default User;
+
+
+
+
+
+
